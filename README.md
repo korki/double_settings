@@ -10,6 +10,8 @@ gem 'double_settings', github: 'korki/double_settings'
 
 ```
 
+### Store values
+
 Example config file:
 
 config/test_conf.yml
@@ -20,12 +22,32 @@ test:
 
 ```
 
-How to get values?
+Same config but in environmental variables:
+
+```
+ENV['TEST_KEY1'] = value1
+ENV['TEST_KEY2'] = value1
+```
+
+### Get values
 
 ```
 Settings.test_conf.key1
 
 ```
+
+### Built-in methods
+
+```
+Settings.environment
+
+```
+
+## Credits
+
+@zuren
+@forvalho
+@fmd
 
 
 ## Contributing
