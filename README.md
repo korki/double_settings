@@ -7,7 +7,6 @@ In Gemfile add:
 
 ```
 gem 'double_settings', github: 'korki/double_settings'
-
 ```
 
 ### Store values
@@ -19,7 +18,6 @@ config/test_conf.yml
 test:
   key1: value1
   key2: value2
-
 ```
 
 Same config but in environmental variables:
@@ -33,14 +31,12 @@ ENV['TEST_KEY2'] = value1
 
 ```
 Settings.test_conf.key1
-
 ```
 
 ### Built-in methods
 
 ```
 Settings.environment
-
 ```
 
 ## Credits
