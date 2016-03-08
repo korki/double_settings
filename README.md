@@ -45,10 +45,11 @@ Settings.environment
 
 ## Credits
 
-@zuren
-@forvalho
-@fmd
+[@zuren](http://github.com/zuren)
 
+[@forvalho](http://github.com/forvalho)
+
+[@fmd](http://github.com/fmd)
 
 ## Contributing
 
