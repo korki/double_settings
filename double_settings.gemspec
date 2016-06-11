@@ -4,8 +4,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "double_settings"
-  spec.version       = '0.0.1'
-  spec.authors       = ['MadeTech & Surfdome']
+  spec.version       = '0.0.2'
+  spec.authors       = ['Surfdome & MadeTech']
   spec.email         = ['orest.hrycyna@surfdome.com']
   spec.summary       = %q{Double settings gem for endpoints}
   spec.description   = spec.summary
@@ -15,9 +15,4 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0")
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
-
-  #spec.add_dependency 'yaml'
-
-  #spec.add_development_dependency "bundler"
-  #spec.add_development_dependency 'pry'
 end

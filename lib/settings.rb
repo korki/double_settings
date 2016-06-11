@@ -29,13 +29,18 @@ module Settings
     end
 
     def method_missing(method_name)
-      environment_variable_for(method_name) or @config[method_name]
+      environment_variable_for(method_name) or file_variable_for(method_name)
     end
 
     private
 
     def environment_variable_for(method_name)
       ENV["#{@namespace}_#{method_name.to_s}".upcase]
+    end
+
+    def file_variable_for(method_name)
+      var = @config[method_name]
+      var.is_a?(Hash) ? EnvironmentStruct.new(method_name, var) : var
     end
   end
 end
